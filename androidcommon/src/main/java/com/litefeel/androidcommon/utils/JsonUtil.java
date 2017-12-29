@@ -11,8 +11,10 @@ import org.json.JSONObject;
  * Created by litefeel on 2017/12/29.
  */
 
-public class JsonUtil {
+public final class JsonUtil {
 
+    private JsonUtil() {
+    }
 
     public static String getString(@NonNull JSONObject jsonObject, @NonNull String key) {
         return getString(jsonObject, key, null);

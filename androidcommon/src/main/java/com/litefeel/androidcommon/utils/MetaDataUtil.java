@@ -10,9 +10,10 @@ import android.support.annotation.Nullable;
 /**
  * Created by litefeel on 2017/12/21.
  */
-public class MetaDataUtil {
+public final class MetaDataUtil {
 
-    private MetaDataUtil(){}
+    private MetaDataUtil() {
+    }
 
     static public boolean getBoolean(@NonNull Context context, @NonNull String key, boolean defaultValue) {
         Bundle metaData = getMetaData(context);
@@ -93,7 +94,7 @@ public class MetaDataUtil {
     static private Bundle getMetaData(@NonNull Context context) {
         try {
             ApplicationInfo appInfo = context.getPackageManager()
-                    .getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA);
+                .getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA);
             return appInfo.metaData;
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
