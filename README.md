@@ -1,11 +1,14 @@
 # AndroidCommon
+[![Download](https://api.bintray.com/packages/litefeel/maven/AndroidCommon/images/download.svg)](https://bintray.com/litefeel/maven/AndroidCommon/_latestVersion)
+[![Release](https://jitpack.io/v/litefeel/AndroidCommon.svg)](https://jitpack.io/#litefeel/AndroidCommon)
+
 Android common library
 
 ### How to Use via [JCenter](http://jcenter.bintray.com/com/litefeel/androidcommon/)
 
 ~~~ gradle
 dependencies {
-    compile 'com.litefeel:androidcommon:1.0.0'
+    compile 'com.litefeel:androidcommon:<version>'
 }
 ~~~
 
@@ -29,7 +32,7 @@ allprojects {
 
 ~~~ gradle
 dependencies {
-    compile 'com.github.litefeel:AndroidCommon:1.0.0'
+    compile 'com.github.litefeel:AndroidCommon:<version>'
 }
 ~~~
 
